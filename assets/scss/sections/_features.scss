@@ -1,0 +1,173 @@
+@use "../abstract/variable" as *;
+
+.features-container {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  width: 100%;
+  background: rgb(18, 11, 60);
+  background: radial-gradient(
+    circle,
+    rgba(18, 11, 60, 1) 2%,
+    rgba(12, 9, 34, 1) 50%
+  );
+  .from-top {
+    // height: 1080px;
+    height: 100%;
+    width: 6px;
+    position: absolute;
+    z-index: 1;
+    // top: 50%;
+    // transform: translateY(-25%);
+    right: 40px;
+    overflow: hidden;
+
+    .slide-line {
+      height: 100%;
+      width: 100%;
+      position: absolute;
+      animation: slideUp 5s linear infinite;
+      background: linear-gradient(to bottom, #cfcfcf 0%, #0d0b1b 100%);
+    }
+  }
+
+  .from-bottom {
+    // height: 1080px;
+    height: 100%;
+    width: 6px;
+    position: absolute;
+    z-index: 1;
+    // bottom: 50%;
+    // transform: translateY(25%);
+    right: 70px;
+    overflow: hidden;
+
+    .slide-line {
+      height: 100%;
+      width: 100%;
+      position: absolute;
+      animation: slideDown 5s linear infinite;
+      background: linear-gradient(to top, #cfcfcf 0%, #0d0b1b 100%);
+    }
+  }
+
+  .features-alignment-container {
+    width: 100%;
+    max-width: 1920px;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    gap: 48px;
+    padding: 100px 30px;
+
+    .heading-container {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+    }
+    .features-content {
+      z-index: 1;
+      display: flex;
+      justify-content: center;
+      gap: 80px;
+      flex-wrap: wrap;
+
+      .feature-box {
+        display: flex;
+        flex-direction: column;
+        // align-items: center;
+        justify-content: space-between;
+        // padding: 64px 16px;
+        padding: 60px 30px;
+        // gap: 48px;
+        gap: 30px;
+        max-width: 440px;
+        // border-radius: 40px 0 40px 0;
+        border-radius: 40px;
+        // border: 1px solid #b7b7b7;
+        background-color: #242532;
+        // background: linear-gradient(to bottom, rgb(12, 9, 34), rgb(18, 11, 60));
+        img {
+          width: 80px;
+        }
+
+        .feature-text-container {
+          display: flex;
+          flex-direction: column;
+          // align-items: center;
+          // text-align: center;
+          // gap: 32px;
+          gap: 20px;
+          .feature-main-text {
+            font-family: "Poppins", sans-serif;
+            font-weight: 300;
+            font-size: 32px;
+            line-height: 48px;
+            color: #ffffff;
+          }
+          .feature-sub-text {
+            font-family: "Poppins", sans-serif;
+            font-weight: 400;
+            font-size: 16px;
+            line-height: 24px;
+            color: #cfcfcf;
+          }
+        }
+      }
+      .feature-box-black {
+        display: flex;
+        flex-direction: column;
+        // align-items: center;
+        justify-content: space-between;
+        // padding: 64px 16px;
+        padding: 60px 30px;
+        // gap: 48px;
+        gap: 30px;
+        max-width: 440px;
+        // border-radius: 40px 0 40px 0;
+        border-radius: 40px;
+        // border: 1px solid #b7b7b7;
+        background-color: #000018;
+        // background: linear-gradient(to bottom, rgb(12, 9, 34), rgb(18, 11, 60));
+        img {
+          width: 80px;
+        }
+
+        .feature-text-container {
+          display: flex;
+          flex-direction: column;
+          // align-items: center;
+          // text-align: center;
+          // gap: 32px;
+          gap: 20px;
+          .feature-main-text {
+            font-family: "Poppins", sans-serif;
+            font-weight: 300;
+            font-size: 32px;
+            line-height: 48px;
+            color: #ffffff;
+          }
+          .feature-sub-text {
+            font-family: "Poppins", sans-serif;
+            font-weight: 400;
+            font-size: 16px;
+            line-height: 24px;
+            color: #cfcfcf;
+          }
+        }
+      }
+    }
+  }
+}
+
+@media only screen and (max-width: $breakpoint-3) {
+  .features-container
+    .features-alignment-container
+    .features-content
+    .feature-box
+    .feature-text-container
+    .feature-main-text {
+    font-size: 28px;
+  }
+}

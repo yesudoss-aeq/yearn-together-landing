@@ -1,0 +1,211 @@
+@use "../abstract/variable" as *;
+
+.chatbot-container {
+  width: 100%;
+  background-color: #020107;
+  padding: 100px 80px 80px 80px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  .chatbot-subcontainer {
+    display: flex;
+    gap: 20px;
+    width: 100%;
+    .chatbot-details-container {
+      width: 50%;
+      h1 {
+        font-size: 120px;
+        font-weight: 300;
+        line-height: 1;
+        -webkit-text-stroke: 1px #ffffff33;
+        -webkit-text-fill-color: transparent;
+      }
+      h3 {
+        background: linear-gradient(90deg, #cfcfcf 0%, #666666 100%);
+        font-size: 60px;
+        font-weight: 300;
+        width: fit-content;
+        display: inline-block;
+        -webkit-text-fill-color: transparent;
+        -webkit-background-clip: text;
+        position: relative;
+
+        span {
+          font-size: 120px;
+          font-weight: 300;
+          line-height: 1;
+          -webkit-text-stroke: 1px #ffffff33;
+          -webkit-text-fill-color: transparent;
+          position: absolute;
+          // top: 50%;
+          top: 16px;
+          left: 50%;
+          transform: translate(-50%, -50%);
+          width: fit-content;
+          white-space: nowrap;
+        }
+      }
+      h4 {
+        color: #7e7e7e;
+        font-size: 30px;
+        font-weight: 500;
+        font-family: Rubik;
+        line-height: 1;
+      }
+      h5 {
+        max-width: 679px;
+        font-size: 48px;
+        font-weight: 500;
+        color: #ffffff;
+        line-height: 1.4;
+        span {
+          color: #4ac9ff;
+        }
+      }
+      p {
+        max-width: 679px;
+        font-size: 18px;
+        font-weight: 400;
+        color: #ffffff;
+      }
+      .chatbot-detail-content {
+        display: flex;
+        flex-direction: column;
+        gap: 35px;
+        padding-left: 110px;
+      }
+    }
+  }
+  .mobile-layout-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 50%;
+    img {
+      width: 80%;
+      max-width: 475px;
+    }
+  }
+}
+
+.bot-buttons-container {
+  display: flex;
+  gap: 20px;
+}
+
+.bot-btn-container {
+  width: 180px;
+  min-width: 180px;
+  height: 50px;
+  background: black;
+  color: #ffffff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: 1px solid #ffffff;
+  border-radius: 4px;
+  gap: 10px;
+  cursor: pointer;
+}
+
+.bot-btn-container:hover {
+  background: #342b2b;
+}
+
+.bot-btn-text-container {
+  display: flex;
+  justify-content: center;
+  align-items: start;
+  flex-direction: column;
+  gap: 2px;
+}
+
+.bot-btn-text-container div {
+  font-size: 11px;
+  letter-spacing: 1px;
+}
+.bot-btn-text-container h2 {
+  font-size: 17px;
+  letter-spacing: 1px;
+}
+
+@media only screen and (max-width: $breakpoint-1) {
+  .chatbot-container .chatbot-subcontainer {
+    flex-direction: column-reverse;
+    gap: 70px;
+    .mobile-layout-container {
+      width: 100%;
+    }
+    .chatbot-details-container {
+      width: 100%;
+      h3 {
+        font-size: 44px;
+        span {
+          font-size: 100px;
+        }
+      }
+      h4 {
+        font-size: 22px;
+      }
+      .chatbot-detail-content {
+        padding-left: 0;
+        align-items: center;
+
+        h5 {
+          text-align: center;
+          font-size: 30px;
+        }
+        p {
+          text-align: center;
+        }
+      }
+    }
+  }
+}
+
+@media only screen and (max-width: $breakpoint-2) {
+  .chatbot-container {
+    padding: 40px 10px 40px 10px;
+  }
+  .chatbot-container .chatbot-subcontainer {
+    align-items: center;
+  }
+  .chatbot-container .chatbot-subcontainer .mobile-layout-container {
+    width: 67%;
+  }
+}
+
+@media only screen and (max-width: $breakpoint-3) {
+  .chatbot-container .chatbot-subcontainer {
+    .chatbot-details-container {
+      h3 {
+        font-size: 30px;
+        span {
+          font-size: 54px;
+        }
+      }
+      h4 {
+        font-size: 20px;
+      }
+      .chatbot-detail-content {
+        padding-left: 0;
+        align-items: center;
+        gap: 20px;
+
+        h5 {
+          text-align: center;
+          font-size: 25px;
+        }
+        p {
+          font-size: 16px;
+          text-align: center;
+        }
+      }
+    }
+  }
+  .bot-buttons-container {
+    flex-direction: column;
+    gap: 20px;
+  }
+}

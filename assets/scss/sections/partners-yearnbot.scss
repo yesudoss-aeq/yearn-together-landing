@@ -1,0 +1,121 @@
+@use "../abstract/variable" as *;
+
+.partners-bot-container {
+  width: 100%;
+  background-color: #020107;
+
+  .partnersBot-align {
+    position: relative;
+    max-width: 1920px;
+    margin-left: auto;
+    margin-right: auto;
+
+    .from-top {
+      // height: 1080px;
+      height: 100%;
+      width: 6px;
+      position: absolute;
+      z-index: 1;
+      // top: 50%;
+      // transform: translateY(-25%);
+      left: 40px;
+      overflow: hidden;
+
+      .slide-line {
+        height: 100%;
+        width: 100%;
+        position: absolute;
+        animation: slideUp 5s linear infinite;
+        background: linear-gradient(to bottom, #cfcfcf 0%, #0d0b1b 100%);
+      }
+    }
+
+    .from-bottom {
+      // height: 1080px;
+      height: 100%;
+      width: 6px;
+      position: absolute;
+      z-index: 1;
+      // bottom: 50%;
+      // transform: translateY(25%);
+      left: 70px;
+      overflow: hidden;
+
+      .slide-line {
+        height: 100%;
+        width: 100%;
+        position: absolute;
+        animation: slideDown 5s linear infinite;
+        background: linear-gradient(to top, #cfcfcf 0%, #0d0b1b 100%);
+      }
+    }
+  }
+}
+
+// .game-play-line {
+//   width: 25%;
+//   height: 6px;
+//   position: absolute;
+//   z-index: 1;
+//   background: #666666;
+//   left: 0;
+//   bottom: 0;
+// }
+
+.game-play-line {
+  width: 100%;
+  height: 6px;
+  position: absolute;
+  z-index: 1;
+  right: 0;
+  bottom: 0;
+  overflow: hidden;
+  .slide-line {
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    animation: slideleft 5s linear infinite;
+    background: linear-gradient(90deg, #cfcfcf 0%, #0e0b23 100%);
+  }
+}
+
+@media only screen and (max-width: $breakpoint-3) {
+  .partners-bot-container .partnersBot-align .from-top {
+    width: 3px;
+    left: 10px;
+  }
+  .partners-bot-container .partnersBot-align .from-bottom {
+    width: 3px;
+    left: 20px;
+  }
+  .game-play-line {
+    height: 3px;
+  }
+}
+
+@keyframes slideUp {
+  0% {
+    transform: translateY(100%);
+  }
+  100% {
+    transform: translateY(-100%);
+  }
+}
+
+@keyframes slideDown {
+  0% {
+    transform: translateY(-100%);
+  }
+  100% {
+    transform: translateY(100%);
+  }
+}
+
+@keyframes slideleft {
+  0% {
+    transform: translateX(100%);
+  }
+  100% {
+    transform: translateX(-100%);
+  }
+}

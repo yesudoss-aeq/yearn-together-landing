@@ -1,0 +1,205 @@
+@use "../abstract/variable" as *;
+
+.bold {
+  font-weight: 600 !important;
+}
+
+.color-prim {
+  color: $color-primary-dark !important;
+}
+
+.hidden {
+  display: none !important;
+}
+
+.mgn-top-2 {
+  margin-top: $mgn-vertical-2 !important;
+}
+
+.lazy-load {
+  filter: blur(8px) brightness(50%);
+}
+
+.outlined-heading {
+  text-align: center;
+  font-size: 120px;
+  font-weight: 300;
+  line-height: 1;
+  -webkit-text-stroke: 1px #ffffff33;
+  -webkit-text-fill-color: transparent;
+}
+.gradient-heading {
+  margin-top: -71px;
+  background: linear-gradient(90deg, #cfcfcf 0%, #666666 100%);
+  font-size: 60px;
+  font-weight: 300;
+  width: fit-content;
+  display: inline-block;
+  -webkit-text-fill-color: transparent;
+  -webkit-background-clip: text;
+}
+
+.fade {
+  transform: translateY(70px);
+  opacity: 0;
+  transition: 1s;
+}
+.fade-active {
+  transform: translateY(0px);
+  opacity: 1;
+}
+
+.gradient-text1 {
+  background: radial-gradient(
+      72.13% 132.54% at 27.87% 38.89%,
+      #1967fc 0%,
+      #19fcb8 100%
+    )
+    /* warning: gradient uses a rotation that is not supported by CSS and may not behave as expected */;
+  font-size: 20px;
+  font-weight: 500;
+  width: fit-content;
+  display: inline-block;
+  -webkit-text-fill-color: transparent;
+  -webkit-background-clip: text;
+}
+
+.gradient-divider-container-right {
+  width: 100%;
+  height: 6px;
+  position: absolute;
+  z-index: 1;
+  right: 0;
+  bottom: 0;
+  overflow: hidden;
+  .gradient-divider-right {
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    animation: slideleft 5s linear infinite;
+    background: linear-gradient(90deg, #cfcfcf 0%, #0e0b23 100%);
+  }
+}
+
+.gradient-divider-container-left {
+  width: 100%;
+  height: 6px;
+  position: absolute;
+  z-index: 1;
+  left: 0;
+  bottom: 0;
+  overflow: hidden;
+  .gradient-divider-left {
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    animation: slideright 5s linear infinite;
+    background: linear-gradient(90deg, #0e0b23 0%, #cfcfcf 100%);
+  }
+}
+
+@keyframes slideleft {
+  0% {
+    transform: translateX(100%);
+  }
+  100% {
+    transform: translateX(-100%);
+  }
+}
+
+@keyframes slideright {
+  0% {
+    transform: translateX(-100%);
+  }
+  100% {
+    transform: translateX(100%);
+  }
+}
+
+.fade-in-text1 {
+  opacity: 0;
+  animation: fadeInAnimation 2s forwards;
+}
+
+@keyframes fadeInAnimation {
+  0% {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.fade-in-text2 {
+  opacity: 0;
+  animation: fadeInAnimation 2s forwards;
+}
+
+@keyframes fadeInAnimation {
+  0% {
+    opacity: 0;
+    transform: translateY(-20px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.fade-in-text3 {
+  opacity: 0;
+  animation: slideIn 1.5s forwards ease-in-out;
+}
+
+@keyframes slideIn {
+  0% {
+    opacity: 0;
+    transform: translateY(-50%);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@media only screen and (max-width: $breakpoint-1) {
+  .outlined-heading {
+    font-size: 100px;
+  }
+  .gradient-heading {
+    margin-top: -54px;
+    font-size: 44px;
+  }
+}
+
+@media only screen and (max-width: $breakpoint-2) {
+  .outlined-heading {
+    font-size: 80px;
+  }
+  .gradient-heading {
+    margin-top: -44px;
+    font-size: 36px;
+  }
+}
+
+@media only screen and (max-width: $breakpoint-3) {
+  .outlined-heading {
+    font-size: 54px;
+  }
+  .gradient-heading {
+    margin-top: -36px;
+    font-size: 30px;
+  }
+}
+
+@media only screen and (max-width: $breakpoint-4) {
+  .outlined-heading {
+    font-size: 40px;
+  }
+  .gradient-heading {
+    margin-top: -30px;
+    font-size: 30px;
+  }
+}

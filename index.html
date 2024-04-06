@@ -1,0 +1,903 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta
+      name="viewport"
+      content="width=device-width,initial-scale=1.0,maximum-scale=1.0,minimum-scale=1.0,user-scalable=no"
+    />
+    <title>YearnTogether</title>
+    <meta
+      name="title"
+      content="YearnTogether | The world's first ever gaming-enabled IDO"
+    />
+    <meta
+      name="description"
+      content="Revolutionize fundraising with our decentralized platform powered by web3. Join a global community for a gaming-style, community-driven process that's transparent, rewarding, and like nothing you've experienced before."
+    />
+    <meta
+      name="keywords"
+      content="YearnTogether, Yearn Together, participate2yearn, promote2yearn, perform2yearn, predict2yearn, pool2yearn, #participate2yearn, #promote2yearn, #perform2yearn, #predict2yearn, #pool2yearn, draw, pool, Elite Pass, "
+    />
+    <!---- meta tags for social platforms ---->
+    <meta property="og:url" content="https://yearntogether.com/" />
+    <meta name="og:type" content="website" />
+    <meta
+      property="og:title"
+      content="YearnTogether | The world's first ever gaming-enabled IDO"
+    />
+    <meta property="og:image" content="/assets/images/yearn-together-og.png" />
+    <meta
+      property="og:image:src"
+      content="/assets/images/yearn-together-og.png"
+    />
+    <meta
+      property="og:description"
+      content="Revolutionize fundraising with our decentralized platform powered by web3. Join a global community for a gaming-style, community-driven process that's transparent, rewarding, and like nothing you've experienced before."
+    />
+    <!---------------------------------------->
+    <!-- Twitter -->
+    <meta property="twitter:card" content="YearnTogether" />
+    <meta property="twitter:url" content="https://yearntogether.com/" />
+    <meta
+      property="twitter:title"
+      content="YearnTogether | The world's first ever gaming-enabled IDO"
+    />
+    <meta
+      property="twitter:description"
+      content="Revolutionize fundraising with our decentralized platform powered by web3. Join a global community for a gaming-style, community-driven process that's transparent, rewarding, and like nothing you've experienced before."
+    />
+    <meta
+      property="twitter:image"
+      content="/assets/images/yearn-together-og.png"
+    />
+    <meta
+      property="twitter:image:src"
+      content="/assets/images/yearn-together-og.png"
+    />
+    <!---------------------------------------->
+    <!-- site verification for "Google Search Console" -->
+    <meta
+      name="google-site-verification"
+      content="sIgzDh2qMATFNNS1CT8yXLQYUf_Z5mrT2HBXGNHejeQ"
+    />
+    <!-- For old browsers that don't support svg -->
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="/assets/icons/favicon-32x32.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="16x16"
+      href="/assets/icons/favicon-16x16.png"
+    />
+    <!-- For modern browsers that supports svg (they will scale it automatically as required) -->
+    <link rel="icon" type="image/svg+xml" href="/assets/icons/favicon.ico" />
+    <!-- Icon for caching in apple (manifest only works with android) -->
+    <link rel="apple-touch-icon" href="/assets/icons/apple-touch-icon.png" />
+    <link rel="manifest" href="/manifest.json" />
+    <link rel="shortcut" type="image/x-icon" href="/assets/icons/favicon.ico" />
+    <link rel="stylesheet" href="/assets/css/style.css" />
+    <!-- <link rel="stylesheet" href="/assets/css/bundle.css" /> -->
+    <!-- <link rel="stylesheet" href="/assets/css/bundle.min.css" /> -->
+    <!-- <link rel="stylesheet" href="/assets/css/bundle.css" /> -->
+    <link
+      rel="stylesheet"
+      type="text/css"
+      href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.css"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Rubik:ital,wght@0,300..900;1,300..900&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <script
+    async
+    src="https://www.googletagmanager.com/gtag/js?id=G-TEBCZ8WSZ5"
+  ></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag() {
+      dataLayer.push(arguments);
+    }
+    gtag("js", new Date());
+
+    gtag("config", "G-TEBCZ8WSZ5");
+  </script>
+
+  <body onload="getLiveData()">
+    <section class="hero-section">
+      <!-- Header -->
+      <section class="home-section">
+        <header class="header-navbar">
+          <div class="alignment-container">
+            <img
+              src="./assets/images/home-img/yearn-together-logo.svg"
+              class="yearn-logo"
+              alt="yearn-logo"
+              draggable="false"
+            />
+
+            <ul class="nav-content">
+              <a href="https://docs.yearntogether.com/" target="_blank">Docs</a>
+              <!-- <a href="https://affiliate.yearntogether.com/" target="_blank"
+              >Affiliate Program</a
+            > -->
+              <a href="http://app.yearntogether.com/" target="_blank">App</a>
+              <a
+                href="
+          https://pool.yearntogether.com/
+          "
+                target="_blank"
+                >Pool</a
+              >
+              <a id="showOnramp" class="buy-usdt-button">
+                Buy
+                <img
+                  src="./assets/images/home-img/usdtLogo.svg"
+                  alt="usdt-icon"
+                  srcset=""
+                  draggable="false"
+                />
+                USDT
+              </a>
+            </ul>
+            <img
+              class="menu-icon"
+              src="./assets/images/home-img/menu-bar.svg"
+              draggable="false"
+              alt="menu-icon"
+            />
+          </div>
+        </header>
+        <!-- Hero content -->
+        <section class="hero-container">
+          <div class="hero-alignment-container">
+            <div class="hero-botvideo-container">
+              <div class="shadow-box"></div>
+              <video
+                autoplay
+                muted
+                loading="lazy"
+                height="100%"
+                width="100%"
+                loop
+              >
+                <source
+                  src="assets/videos/BotVideoAnimation.mp4"
+                  type="video/mp4"
+                />
+                Your browser does not support the video tag.
+              </video>
+            </div>
+            <div class="hero-content">
+              <h3 class="hero-sub-text fade-in-text2">
+                INTRODUCING WORLD’S FIRST
+              </h3>
+              <h1 class="hero-main-text fade-in-text1">
+                AI Powered Gamified IDO Platform
+              </h1>
+              <p class="hero-text fade-in-text3">
+                Revolutionize fundraising with our decentralized platform
+                powered by web3. Join a global community for a gaming-style,
+                community-driven process that's transparent and rewarding.
+              </p>
+              <!-- <div class="stats">
+              <div class="stat-box">
+                <p class="stat-text1">3000+</p>
+                <p class="stat-text2">CURRENT USERS</p>
+              </div>
+              <div class="stat-box stat-divider">
+                <p class="stat-text1">20+</p>
+                <p class="stat-text2">GIVEAWAYS</p>
+              </div>
+              <div class="stat-box">
+                <p class="stat-text1">$2500+</p>
+                <p class="stat-text2">DISTRIBUTED</p>
+              </div>
+            </div> -->
+              <section class="powered-with fade-in-text2">
+                <div class="powered-with-alignment-container">
+                  <p class="powered-with-text">POWERED WITH</p>
+                  <div class="powered-with-logos">
+                    <div>
+                      <img src="./assets/logos/chain-link-logo.svg" alt="" />
+                    </div>
+                    <div>
+                      <img src="./assets/logos/certik-logo.svg" />
+                    </div>
+                    <div>
+                      <img src="./assets/logos/binance.svg" />
+                    </div>
+                    <div>
+                      <img src="./assets/logos/open-ai-logo.svg" />
+                    </div>
+                    <div>
+                      <img src="./assets/logos/solana.svg" />
+                    </div>
+                  </div>
+                </div>
+              </section>
+              <div class="apply-launch-container">
+                <button class="launch-btn" onclick="{handleParticipation()}">
+                  Apply to Launch
+                </button>
+                <button class="play-btn" onclick="{handlePlayIcon()}">
+                  <img src="./assets/images/home-img/play-icon.svg" />
+                </button>
+              </div>
+            </div>
+            <div class="gradient-divider-container-right">
+              <div class="gradient-divider-right"></div>
+            </div>
+          </div>
+        </section>
+      </section>
+      <!-- Powered with -->
+      <!-- <section class="powered-with">
+        <div class="powered-with-alignment-container">
+          <p class="powered-with-text fade">POWERED WITH</p>
+          <div class="powered-with-logos fade">
+            <div>
+              <img src="./assets/logos/chain-link-logo.svg" alt="" />
+            </div>
+            <div>
+              <img src="./assets/logos/certik-logo.svg" />
+            </div>
+            <div>
+              <img src="./assets/logos/binance.svg" />
+            </div>
+            <div>
+              <img src="./assets/logos/open-ai-logo.svg" />
+            </div>
+          </div>
+          <div class="gradient-divider-container-right">
+            <div class="gradient-divider-right"></div>
+          </div>
+        </div>
+      </section> -->
+      <!-- How it works -->
+      <section class="how-it-works">
+        <div class="how-it-works-alignment-container">
+          <div class="heading-container fade">
+            <h1 class="outlined-heading">How to join?</h1>
+            <h3 class="gradient-heading">How to join?</h3>
+          </div>
+          <div class="how-it-works-content fade">
+            <div class="how-content">
+              <!-- <p class="how-text gradient-text1">Step1</p> -->
+              <div class="how-img">
+                <img
+                  src="./assets/images/how-to-join/yearn.svg"
+                  alt="how-it-works"
+                  draggable="false"
+                />
+              </div>
+              <p class="how-main-text">Get $YEARN</p>
+              <p class="how-sub-text">
+                Get $YEARN to participate in IDOs on
+                <a href="https://yearntogether.com/" target="_blank"
+                  >yearntogether.com</a
+                >
+              </p>
+            </div>
+
+            <div class="how-content">
+              <!-- <p class="how-text gradient-text1">Step2</p> -->
+              <div class="how-img">
+                <img
+                  src="./assets/images/how-to-join/wallet.svg"
+                  alt="how-it-works"
+                  draggable="false"
+                />
+              </div>
+              <p class="how-main-text">Stake $YEARN</p>
+              <p class="how-sub-text">
+                Access Staking on
+                <a href="https://app.yearntogether.com/" target="_blank"
+                  >app.yearntogether.com</a
+                >
+                to stake $YEARN.
+              </p>
+            </div>
+
+            <div class="how-content">
+              <!-- <p class="how-text gradient-text1">Step3</p> -->
+              <div class="how-img">
+                <img
+                  src="./assets/images/how-to-join/kyc.svg"
+                  alt="how-it-works"
+                  draggable="false"
+                />
+              </div>
+              <p class="how-main-text">Apply Whitelist & Complete KYC</p>
+              <p class="how-sub-text">
+                Apply whitelist on IDO pool(s). Verify information to KYC.
+              </p>
+            </div>
+
+            <div class="how-content">
+              <!-- <p class="how-text gradient-text1">Step4</p> -->
+              <div class="how-img">
+                <img
+                  src="./assets/images/how-to-join/stake.svg"
+                  alt="how-it-works"
+                  draggable="false"
+                />
+              </div>
+              <p class="how-main-text">Join IDO</p>
+              <p class="how-sub-text">Purchase tokens & Claim your tokens.</p>
+            </div>
+          </div>
+          <div class="gradient-divider-container-left">
+            <div class="gradient-divider-left"></div>
+          </div>
+        </div>
+      </section>
+      <!-- features -->
+      <section class="features-container">
+        <div class="from-top">
+          <div class="slide-line"></div>
+        </div>
+        <div class="from-bottom">
+          <div class="slide-line"></div>
+        </div>
+        <div class="features-alignment-container">
+          
+          <div class="heading-container fade">
+            <h1 class="outlined-heading">Features</h1>
+            <h3 class="gradient-heading">Features</h3>
+          </div>
+          <div class="features-content fade">
+            <div class="feature-box">
+              <img src="./assets/images/features/refund.svg" />
+              <div class="feature-text-container">
+                <p class="feature-main-text">IDO</p>
+                <p class="feature-sub-text">
+                  Protected. Secure. Flexible. We offer an added layer of risk
+                  management tooling for investors.
+                </p>
+              </div>
+            </div>
+
+            <div class="feature-box-black">
+              <img src="./assets/images/features/fair-tier.svg" />
+              <div class="feature-text-container">
+                <p class="feature-main-text">Own GPT</p>
+                <p class="feature-sub-text">
+                  Balanced system of benefits for all level of participants! We
+                  have made IDOs accessible to all.
+                </p>
+              </div>
+            </div>
+
+            <div class="feature-box">
+              <img src="./assets/images/features/air-drop.svg" />
+              <div class="feature-text-container">
+                <p class="feature-main-text">Gamify</p>
+                <p class="feature-sub-text">
+                  Earn without spending. Projects provide the $CGPT community
+                  with unique benefits just for being listed!
+                </p>
+              </div>
+            </div>
+
+            <div class="feature-box-black">
+              <img src="./assets/images/features/incubation.svg" />
+              <div class="feature-text-container">
+                <p class="feature-main-text">YEARN Swap</p>
+                <p class="feature-sub-text">
+                  Providing support, guidance, and AI infrastructure to projects
+                  via our extensive network of expert founders.
+                </p>
+              </div>
+            </div>
+
+            <div class="feature-box">
+              <img src="./assets/images/features/projects.svg" />
+              <div class="feature-text-container">
+                <p class="feature-main-text">Yearn Escrow</p>
+                <p class="feature-sub-text">
+                  Every project goes through rigorous quality assurance and due
+                  diligence processes to guarantee that only the best are
+                  included.
+                </p>
+              </div>
+            </div>
+
+            <div class="feature-box-black">
+              <img src="./assets/images/features/crowd-funding.svg" />
+              <div class="feature-text-container">
+                <p class="feature-main-text">Yearn KYC</p>
+                <p class="feature-sub-text">
+                  Access to exclusivity. Early stage venture quality deals are
+                  made available to the $CGPT community.
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- work in progress -->
+      <!-- <section class="work-progress-container">
+        <div class="work-progress-alignment-container">
+          <div class="heading-container fade">
+            <h1 class="outlined-heading">Work in Progress</h1>
+            <h3 class="gradient-heading">Work in Progress</h3>
+          </div>
+          <p class="work-progress-text fade">
+            We are currently developing an innovative feature that will empower
+            users to create their own personalized bots to manage various
+            business tasks and inquiries. With this feature, users will have the
+            ability to automate repetitive tasks and streamline communication
+            processes, allowing for greater efficiency and productivity in their
+            day-to-day operations. Stay tuned for updates as we continue to work
+            on enhancing this exciting new functionality.
+          </p>
+          <div class="video-container">
+            <iframe
+              src="https://www.youtube.com/embed/TZVXKFcc4bA"
+              frameborder="0"
+              allowfullscreen
+            ></iframe>
+          </div>
+          <div class="gradient-divider-container-left">
+            <div class="gradient-divider-left"></div>
+          </div>
+        </div>
+      </section> -->
+      <!-- yearn gpt -->
+      <section class="yearn-gpt">
+        <div class="yearn-gpt-align">
+          <div class="yern-heading fade">
+            <h1 class="outlined-heading">Yearn GPT</h1>
+            <h1 class="gradient-heading">Yearn GPT</h1>
+          </div>
+          <div class="yearn-content">
+            <div class="yearn-left-content fade">
+              <div class="yearn-img-container">
+                <img src="assets/images/yearn-gpt/yearnGpt.png" alt="" />
+              </div>
+              <div class="yearn-from-section">
+                <div class="yearn-section-slide"></div>
+              </div>
+            </div>
+            <div class="yearn-right-content fade">
+              <div class="yearn-text-content">
+                <h2>Designed for your IDO Projects</h2>
+                <p>
+                  Embark on a transformative journey with our cutting-edge
+                  AI-powered chatbots tailored to your unique business needs.
+                  Revolutionize your customer experience by seamlessly
+                  integrating intelligent automation into your website. Whether
+                  it's enhancing customer support, streamlining sales processes,
+                  or providing 24/7 assistance, our meticulously crafted chatbot
+                  solutions are designed to elevate your brand's engagement to
+                  unprecedented levels.
+                </p>
+                <p>
+                  Experience the future of customer interaction with our bespoke
+                  chatbots, equipped with the latest AI technology to
+                  understand, engage, and assist your visitors with unparalleled
+                  precision. Say goodbye to mundane tasks and hello to endless
+                  possibilities for growth and success. Join the conversation
+                  revolution today and unleash the full potential of your
+                  business with our innovative chatbot solutions.
+                </p>
+              </div>
+            </div>
+          </div>
+          <div class="yearn-gptline-left">
+            <div class="yearn-slider-left"></div>
+          </div>
+          <div class="yearn-from-bottom">
+            <div class="yearn-slide-line"></div>
+          </div>
+        </div>
+      </section>
+      <!-- Gameplay features section start -->
+      <section class="gameplayFeatures">
+        <div class="gameplay-align fade">
+          <h1 class="outlined-heading">Gameplay Features</h1>
+          <h3 class="gradient-heading">Gameplay Features</h3>
+          <div class="gameplayContent fade">
+            <div class="videoSection fade">
+              <div class="factory-shadow"></div>
+              <video autoplay muted width="100%" loop>
+                <source
+                  src="assets/videos/HeroSecAnimeFinal.mp4"
+                  type="video/mp4"
+                />
+                Your browser does not support the video tag.
+              </video>
+            </div>
+            <div class="sliderSection fade">
+              <input type="radio" id="radio1" name="slider" />
+              <input type="radio" id="radio2" name="slider" />
+              <input type="radio" id="radio3" name="slider" />
+              <input type="radio" id="radio4" name="slider" />
+              <input type="radio" id="radio5" name="slider" />
+              <div class="slider-cards">
+                <!-- sliding cards -->
+
+                <div class="slides">
+                  <div class="outerSlider">
+                    <div class="slider">
+                      <img
+                        class="gameplay-card-image"
+                        src="./assets/images/gameplay-feature/prizecup.svg"
+                        alt="participate-to-yearn-image"
+                      />
+                      <div class="contentSection">
+                        <h2>#participate2yearn</h2>
+                        <p>
+                          The first step is to purchase a ticket and participate
+                          in the draw. Each ticket is eligible for three draws.
+                        </p>
+                        <button>Participate</button>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="outerSlider">
+                    <div class="slider">
+                      <img
+                        class="gameplay-card-image"
+                        src="/assets/images/gameplay-feature/megaphone.svg"
+                        alt="participate-to-yearn-image"
+                      />
+                      <div class="contentSection">
+                        <h2>#promote2yearn</h2>
+                        <p>
+                          The first step is to purchase a ticket and participate
+                          in the draw. Each ticket is eligible for three draws.
+                        </p>
+                        <button>Promote</button>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="outerSlider">
+                    <div class="slider">
+                      <img
+                        class="gameplay-card-image"
+                        src="./assets/images/gameplay-feature/aim.svg"
+                        alt="participate-to-yearn-image"
+                      />
+                      <div class="contentSection">
+                        <h2>#pridict2yearn</h2>
+                        <p>
+                          The first step is to purchase a ticket and participate
+                          in the draw. Each ticket is eligible for three draws.
+                        </p>
+                        <button>Pridict</button>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="outerSlider">
+                    <div class="slider">
+                      <img
+                        class="gameplay-card-image"
+                        src="./assets/images/gameplay-feature/analysis.svg"
+                        alt="participate-to-yearn-image"
+                      />
+                      <div class="contentSection">
+                        <h2>#perform2yearn</h2>
+                        <p>
+                          The first step is to purchase a ticket and participate
+                          in the draw. Each ticket is eligible for three draws.
+                        </p>
+                        <button>Perform</button>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="outerSlider">
+                    <div class="slider">
+                      <img
+                        class="gameplay-card-image"
+                        src="./assets/images/gameplay-feature/puzzel.svg"
+                        alt="participate-to-yearn-image"
+                      />
+                      <div class="contentSection">
+                        <h2>#pool2yearn</h2>
+                        <p>
+                          The first step is to purchase a ticket and participate
+                          in the draw. Each ticket is eligible for three draws.
+                        </p>
+                        <button>Pool</button>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <!-- sliding cards -->
+              </div>
+              <div class="dots">
+                <label class="dot1" for="radio1"></label>
+                <label class="dot2" for="radio2"></label>
+                <label class="dot3" for="radio3"></label>
+                <label class="dot4" for="radio4"></label>
+                <label class="dot5" for="radio5"></label>
+              </div>
+            </div>
+          </div>
+          <div class="game-play-line">
+            <div class="slide-line"></div>
+          </div>
+        </div>
+      </section>
+      <!-- Gameplay features section End -->
+      <!-- conbination of parners and yearn bot for line style -->
+      <section class="partners-bot-container">
+        <div class="partnersBot-align">
+          <div class="from-top">
+            <div class="slide-line"></div>
+          </div>
+          <div class="from-bottom">
+            <div class="slide-line"></div>
+          </div>
+          <!-- partners and bakers section start -->
+          <section class="partners-bakers fade">
+            <div class="partners-heading">
+              <h1 class="outlined-heading">Our Partners & Backers</h1>
+              <h3 class="gradient-heading">Our Partners & Backers</h3>
+            </div>
+            <div id="partners" class="partners-section fade">
+              <img src="./assets/images/partners-backers/binance.svg" alt="" />
+            </div>
+          </section>
+          <!-- partners and bakers section end -->
+
+          <!-- chatbot section start-->
+
+          <section class="chatbot-container">
+            <div class="chatbot-subcontainer fade">
+              <div class="chatbot-details-container fade">
+                <!-- <h1>Yearn Bot</h1> -->
+                <div class="chatbot-detail-content">
+                  <h3>
+                    Yearn Bot
+                    <span>Yearn Bot</span>
+                  </h3>
+
+                  <h4>TECHNOLOGY INTEGRATION</h4>
+                  <img
+                    style="width: 140px"
+                    src="./assets/images/yearn-bot/starratingGroup.svg"
+                    alt=""
+                  />
+                  <h5 class="chatbot-title">
+                    Forget the hassle of metamask and enjoy the simplicity of
+                    <span>Yearn BOT</span>
+                  </h5>
+                  <p>
+                    Most crypto users use mobile, showing support to those users
+                    we are introducing YearnGPT an AI language model helping you
+                    to easily bridge the gap between Metamask and smart contract
+                    in few taps from your mobile.
+                  </p>
+                  <!-- buttons -->
+                  <div class="bot-buttons-container">
+                    <button class="bot-btn-container">
+                      <img
+                        src="./assets/images/yearn-bot/apple-icon.svg"
+                        alt=""
+                      />
+                      <div class="bot-btn-text-container">
+                        <div>Available on the</div>
+                        <h2>App Store</h2>
+                      </div>
+                    </button>
+                    <button class="bot-btn-container">
+                      <img
+                        src="./assets/images/yearn-bot/g-play-icon.svg"
+                        alt=""
+                      />
+                      <div class="bot-btn-text-container">
+                        <div>GET IT ON</div>
+                        <h2>Google Play</h2>
+                      </div>
+                    </button>
+                  </div>
+                </div>
+              </div>
+              <div class="mobile-layout-container fade">
+                <img
+                  src="./assets/images/yearn-bot/mobile-layout2.png"
+                  alt="mobile-layout"
+                  class="mobile-layout"
+                />
+              </div>
+            </div>
+          </section>
+          <!-- chatbot section end-->
+        </div>
+      </section>
+      <!-- combination end -->
+      <!-- yearntogether launch start-->
+      <section class="launch-container">
+        <div class="launch-content fade">
+          <h2>Want to Launch your project on YearnTogether?</h2>
+          <button>Apply to Launch</button>
+        </div>
+      </section>
+      <!-- yearntogether launch end-->
+      <!-- footer section start -->
+      <section class="footer-container">
+        <div class="logo-section fade">
+          <div class="logo-container">
+            <img
+              class="logo"
+              src="./assets/images/social-media/botlogo.svg"
+              alt="logo"
+            />
+            <img
+              class="text"
+              src="./assets/images/social-media/logo.svg"
+              alt="logo"
+            />
+          </div>
+          <div class="logo-content">
+            <p>Launch hand-picked projects and help them shine.</p>
+            <p>
+              YearnTogether, a cutting-edge launchpad and Gaming platform
+              powered by Yearn GPT.
+            </p>
+          </div>
+          <div class="social-contents">
+            <a href="https://t.me/YearntogetherGlobalchat" target="_blank">
+              <img src="./assets/images/social-media/telegram.svg" alt="img" />
+            </a>
+            <a href="" target="_blank">
+              <img src="./assets//images/social-media/discord.svg" alt="img" />
+            </a>
+            <a href="" target="_blank">
+              <img src="./assets//images/social-media/facebook.svg" alt="img" />
+            </a>
+            <a
+              href="https://uk.linkedin.com/company/yearntogether"
+              target="_blank"
+            >
+              <img src="./assets/images/social-media/linkedin.svg" alt="img" />
+            </a>
+            <a href="https://twitter.com/yearn_together" target="_blank">
+              <img src="./assets//images/social-media/twitter.svg" alt="img" />
+            </a>
+            <a href="" target="_blank">
+              <img src="./assets/images/social-media/youtube.svg" alt="img" />
+            </a>
+            <a href="" target="_blank">
+              <img src="./assets/images/social-media/instagram.svg" alt="img" />
+            </a>
+          </div>
+        </div>
+        <div class="bottom-footer">
+          <p class="copywrite">&copy; Copyright 2023. All rights reserved</p>
+          <div>
+            <a
+              href="https://docs.yearntogether.com/yearntogether/frequently-asked-questions"
+              target="_blank"
+              >FAQ</a
+            >
+            <a
+              href="https://docs.yearntogether.com/terms-and-conditions/terms-and-conditions"
+              target="_blank"
+              >Terms of Service</a
+            >
+            <a
+              href="https://docs.yearntogether.com/terms-and-conditions/privacy-policy"
+              target="_blank"
+              >Privacy Policy</a
+            >
+          </div>
+        </div>
+      </section>
+      <!-- footer section end -->
+    </section>
+    <!-- footer-end -->
+
+    <script
+      src="https://code.jquery.com/jquery-3.6.3.min.js"
+      integrity="sha256-pvPw+upLPUjgMXY0G+8O0xUf+/Im1MZjXxxgOcBQBXU="
+      crossorigin="anonymous"
+    ></script>
+    <script src="https://code.jquery.com/jquery-migrate-3.0.0.min.js"></script>
+    <!-- <script
+    src="https://cdn.skypack.dev/pin/@onramp.money/onramp-web-sdk@v1.4.6-XT51E3s1onju1zjhaNNQ/mode=imports,min/optimized/@onramp.money/onramp-web-sdk.js"></script> -->
+    <script type="module">
+      import { OnrampWebSDK } from "https://cdn.skypack.dev/@onramp.money/onramp-web-sdk";
+      window.OnrampWebSDK = OnrampWebSDK;
+      const onrampInstance = new OnrampWebSDK({
+        appId: 659719,
+        flowType: 1, // 1 -> onramp || 2 -> offramp || 3 -> Merchant checkout
+      });
+      document.getElementById("showOnramp").addEventListener("click", () => {
+        onrampInstance.show();
+      });
+    </script>
+    <script src="script.js"></script>
+    <script
+      type="text/javascript"
+      src="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"
+    ></script>
+    <!-- Google tag (gtag.js) -->
+  </body>
+  <script>
+    const partnersImgData = [
+      "./assets/images/partners-backers/chainlink.svg",
+      "./assets/images/partners-backers/certic.svg",
+      "./assets/images/partners-backers/kenzoLabs.svg",
+      "./assets/images/partners-backers/reneverse.svg",
+      "./assets/images/partners-backers/unityCapital.svg",
+      "./assets/images/partners-backers/hiddenGemsCapital.svg",
+      "./assets/images/partners-backers/plena.svg",
+      "./assets/images/partners-backers/dctCapital.svg",
+      "./assets/images/partners-backers/yeeha.svg",
+      "./assets/images/partners-backers/mhaya.svg",
+      "./assets/images/partners-backers/trantor.svg",
+      "./assets/images/partners-backers/eraGame.svg",
+      "./assets/images/partners-backers/battlecity.svg",
+      "./assets/images/partners-backers/mixedRarity.svg",
+      "./assets/images/partners-backers/tricon.svg",
+      "./assets/images/partners-backers/skytopia.svg",
+      "./assets/images/partners-backers/skillgaming.svg",
+      "./assets/images/partners-backers/chain.svg",
+      "./assets/images/partners-backers/did.svg",
+      "./assets/images/partners-backers/router.svg",
+      "./assets/images/partners-backers/coinmarketcap.svg",
+      "./assets/images/partners-backers/coinGecko.svg",
+      "./assets/images/partners-backers/bitkeep.svg",
+    ];
+
+    const renderImage = () => {
+      // Get the existing content of the #partners element
+      let existingContent = document.getElementById("partners").innerHTML;
+
+      // Concatenate the new image tags with the existing content
+      let newContent =
+        existingContent +
+        partnersImgData
+          .map(
+            (val, i) => `
+                        <img src=${val} alt="" />
+                    `
+          )
+          .join("");
+
+      // Update the content of the #partners element with the new content
+      document.getElementById("partners").innerHTML = newContent;
+    };
+    renderImage();
+
+    let counter = 1;
+    setInterval(() => {
+      const radioButton = document.getElementById("radio" + counter);
+      radioButton.checked = true;
+
+      counter = counter + 1;
+      if (counter > 5) {
+        counter = 1;
+      }
+    }, 3000);
+
+    window.addEventListener("scroll", fadeInAnimation);
+    function fadeInAnimation() {
+      let fades = document.querySelectorAll(".fade");
+      for (let i = 0; i < fades.length; i++) {
+        let windowHeight = window.innerHeight;
+        let contentTop = fades[i].getBoundingClientRect().top;
+        let revealPoint = 150;
+        if (contentTop < windowHeight - revealPoint) {
+          fades[i].classList.add("fade-active");
+        }
+      }
+    }
+  </script>
+</html>

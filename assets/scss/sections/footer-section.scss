@@ -1,0 +1,97 @@
+@use "../abstract/variable" as *;
+
+.footer-container {
+  width: 100%;
+  background-color: #161518;
+  padding: 100px 80px 20px 80px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 54px;
+
+  .logo-section {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    align-items: center;
+
+    .logo-container {
+      display: flex;
+      justify-content: center;
+      align-items: end;
+      gap: 10px;
+    }
+    .logo-content {
+      p {
+        font-size: 16px;
+        font-weight: 400;
+        color: #ffffffa3;
+        text-align: center;
+      }
+    }
+
+    .social-contents {
+      display: flex;
+      justify-content: center;
+      gap: 15px;
+      padding-top: 10px;
+      flex-wrap: wrap;
+    }
+  }
+
+  .bottom-footer {
+    width: 100%;
+    max-width: 1920px;
+    display: flex;
+    justify-content: space-between;
+    p {
+      font-size: 12px;
+      font-weight: 400;
+      color: #ffffff;
+    }
+    div {
+      display: flex;
+      gap: 10px;
+      a {
+        color: #ffffff;
+        font-size: 12px;
+        font-weight: 400;
+        padding-right: 12px;
+        border-right: 1px solid #d9d9d9;
+      }
+      a:last-child {
+        border: none;
+      }
+      p {
+        padding-right: 12px;
+        border-right: 1px solid #d9d9d9;
+      }
+      .privacy {
+        border: none;
+      }
+    }
+  }
+}
+
+@media only screen and (max-width: $breakpoint-2) {
+  .footer-container {
+    padding: 80px 20px 20px 20px;
+  }
+}
+
+@media only screen and (max-width: $breakpoint-3) {
+  .footer-container .logo-section .logo-container {
+    .logo {
+      width: 40px;
+    }
+    .text {
+      width: 210px;
+    }
+  }
+  .footer-container .bottom-footer {
+    flex-direction: column;
+    align-items: center;
+    gap: 6px;
+  }
+}

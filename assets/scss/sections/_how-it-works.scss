@@ -1,0 +1,85 @@
+// How it works
+@use "../abstract/variable" as *;
+
+.how-it-works {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  background: rgb(18, 11, 60);
+  background: radial-gradient(circle, rgb(10, 5, 41) 2%, rgb(7, 4, 29) 50%);
+
+  .how-it-works-alignment-container {
+    position: relative;
+    width: 100%;
+    max-width: 1920px;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    // gap: 32px;
+    gap: 100px;
+    padding: 100px 0 130px 0;
+
+    .heading-container {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+    }
+    .how-it-works-content {
+      display: flex;
+      justify-content: center;
+      // gap: 44px;
+      gap: 60px;
+      flex-wrap: wrap;
+      // padding-bottom: 72px;
+      padding-left: 30px;
+      padding-right: 30px;
+
+      .how-content {
+        display: flex;
+        flex-direction: column;
+        // justify-content: space-between;
+        gap: 32px;
+        max-width: 292px;
+        // min-height: 335px;
+        .how-img {
+          display: flex;
+          // flex: 1;
+          align-items: center;
+          img {
+            // height: 100px;
+            width: 100px;
+          }
+        }
+
+        .how-main-text {
+          font-family: "Poppins", sans-serif;
+          font-weight: 600;
+          font-size: 32px;
+          line-height: 48px;
+          color: white;
+        }
+        .how-sub-text {
+          font-family: "Poppins", sans-serif;
+          font-weight: 400;
+          font-size: 16px;
+          line-height: 24px;
+          color: #ffffffa3;
+          a {
+            text-decoration: underline;
+          }
+        }
+      }
+    }
+  }
+}
+
+@media only screen and (max-width: $breakpoint-3) {
+  .how-it-works
+    .how-it-works-alignment-container
+    .how-it-works-content
+    .how-content
+    .how-main-text {
+    font-size: 28px;
+  }
+}

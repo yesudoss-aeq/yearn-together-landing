@@ -1,0 +1,54 @@
+@use "../abstract/variable" as *;
+
+.partners-bakers {
+  width: 100%;
+  background-color: #020107;
+  padding: 100px 80px 100px 80px;
+  display: flex;
+  flex-direction: column;
+  gap: 80px;
+  align-items: center;
+  overflow: hidden;
+  position: relative;
+
+  .partners-heading {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .partners-section {
+    max-width: 1340px;
+    width: 90%;
+    display: grid;
+    justify-items: center;
+    align-items: center;
+    grid-template-columns: repeat(auto-fill, minmax(312px, 1fr));
+    align-items: center;
+    gap: 1rem;
+
+    img {
+      width: 304px;
+    }
+  }
+}
+@media only screen and (max-width: $breakpoint-2) {
+  .partners-bakers .partners-section {
+    grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+    img {
+      width: 200px;
+    }
+  }
+}
+
+@media only screen and (max-width: $breakpoint-3) {
+  .partners-bakers {
+    padding: 80px 0px 80px 0px;
+  }
+  .partners-bakers .partners-section {
+    grid-template-columns: repeat(auto-fill, minmax(150px, 1fr));
+    img {
+      width: 150px;
+    }
+  }
+}
