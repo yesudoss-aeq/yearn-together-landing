@@ -1,7 +1,6 @@
 @use "../abstract/variable" as *;
 
 .features-container {
-  position: relative;
   display: flex;
   justify-content: center;
   width: 100%;
@@ -11,47 +10,10 @@
     rgba(18, 11, 60, 1) 2%,
     rgba(12, 9, 34, 1) 50%
   );
-  .from-top {
-    // height: 1080px;
-    height: 100%;
-    width: 6px;
-    position: absolute;
-    z-index: 1;
-    // top: 50%;
-    // transform: translateY(-25%);
-    right: 40px;
-    overflow: hidden;
-
-    .slide-line {
-      height: 100%;
-      width: 100%;
-      position: absolute;
-      animation: slideUp 5s linear infinite;
-      background: linear-gradient(to bottom, #cfcfcf 0%, #0d0b1b 100%);
-    }
-  }
-
-  .from-bottom {
-    // height: 1080px;
-    height: 100%;
-    width: 6px;
-    position: absolute;
-    z-index: 1;
-    // bottom: 50%;
-    // transform: translateY(25%);
-    right: 70px;
-    overflow: hidden;
-
-    .slide-line {
-      height: 100%;
-      width: 100%;
-      position: absolute;
-      animation: slideDown 5s linear infinite;
-      background: linear-gradient(to top, #cfcfcf 0%, #0d0b1b 100%);
-    }
-  }
 
   .features-alignment-container {
+    position: relative;
+
     width: 100%;
     max-width: 1920px;
     display: flex;
@@ -59,6 +21,48 @@
     flex-direction: column;
     gap: 48px;
     padding: 100px 30px;
+
+    .from-top {
+      // height: 1080px;
+      height: 100%;
+      width: 6px;
+      position: absolute;
+      z-index: 1;
+      // top: 50%;
+      // transform: translateY(-25%);
+      right: 40px;
+      top: 0;
+      overflow: hidden;
+
+      .slide-line {
+        height: 100%;
+        width: 100%;
+        position: absolute;
+        animation: slideUp 5s linear infinite;
+        background: linear-gradient(to bottom, #cfcfcf 0%, #0d0b1b 100%);
+      }
+    }
+
+    .from-bottom {
+      // height: 1080px;
+      height: 100%;
+      width: 6px;
+      position: absolute;
+      z-index: 1;
+      // bottom: 50%;
+      // transform: translateY(25%);
+      top: 0;
+      right: 70px;
+      overflow: hidden;
+
+      .slide-line {
+        height: 100%;
+        width: 100%;
+        position: absolute;
+        animation: slideDown 5s linear infinite;
+        background: linear-gradient(to top, #cfcfcf 0%, #0d0b1b 100%);
+      }
+    }
 
     .heading-container {
       display: flex;
@@ -162,6 +166,16 @@
 }
 
 @media only screen and (max-width: $breakpoint-3) {
+  .features-container .features-alignment-container {
+    .from-top {
+      width: 3px;
+      right: 15px;
+    }
+    .from-bottom {
+      width: 3px;
+      right: 30px;
+    }
+  }
   .features-container
     .features-alignment-container
     .features-content

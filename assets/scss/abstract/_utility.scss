@@ -185,6 +185,13 @@
 }
 
 @media only screen and (max-width: $breakpoint-3) {
+  .gradient-divider-container-left {
+    height: 3px;
+  }
+  .gradient-divider-container-right {
+    height: 3px;
+  }
+
   .outlined-heading {
     font-size: 54px;
   }
