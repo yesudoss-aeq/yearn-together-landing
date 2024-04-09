@@ -2010,8 +2010,15 @@ body {
   display: flex;
   align-items: center;
 }
+.how-it-works .how-it-works-alignment-container .how-it-works-content .how-content .how-img .yearn-coin {
+  aspect-ratio: 1;
+  width: 115px;
+  object-fit: contain;
+}
 .how-it-works .how-it-works-alignment-container .how-it-works-content .how-content .how-img img {
+  aspect-ratio: 1;
   width: 100px;
+  object-fit: contain;
 }
 .how-it-works .how-it-works-alignment-container .how-it-works-content .how-content .how-main-text {
   font-family: "Poppins", sans-serif;

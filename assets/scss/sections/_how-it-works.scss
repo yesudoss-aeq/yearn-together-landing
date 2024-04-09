@@ -46,9 +46,15 @@
           display: flex;
           // flex: 1;
           align-items: center;
+          .yearn-coin {
+            aspect-ratio: 1;
+            width: 115px;
+            object-fit: contain;
+          }
           img {
-            // height: 100px;
+            aspect-ratio: 1;
             width: 100px;
+            object-fit: contain;
           }
         }
 
