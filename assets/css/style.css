@@ -2130,11 +2130,11 @@ body {
   position: relative;
   display: flex;
   flex-direction: column;
-  gap: 13px;
+  gap: 25px;
 }
 .yearn-content .yearn-text-content .img-text-content p {
   font-weight: 500;
-  font-size: 22px;
+  font-size: 18px;
   color: #ffffff;
   display: flex;
   align-items: center;

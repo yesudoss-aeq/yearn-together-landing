@@ -297,10 +297,10 @@
       position: relative;
       display: flex;
       flex-direction: column;
-      gap: 13px;
+      gap: 25px;
       p {
         font-weight: 500;
-        font-size: 22px;
+        font-size: 18px;
         color: #ffffff;
         display: flex;
         align-items: center;
@@ -310,6 +310,18 @@
           width: 20px;
         }
       }
+      // div {
+      //   h2 {
+      //     font-size: 20px;
+      //     color: #a143ff;
+      //     font-weight: 500;
+      //   }
+      //   p {
+      //     font-size: 18px;
+      //     color: #ffffff;
+      //     font-weight: 500;
+      //   }
+      // }
     }
   }
 }
