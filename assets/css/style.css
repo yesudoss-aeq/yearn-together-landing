@@ -2060,109 +2060,106 @@ body {
   align-items: center;
   gap: 40px;
 }
-.yearn-gpt .yearn-gpt-align .yern-heading {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-}
-
-.dots-box {
-  width: 100%;
-  display: flex;
-  justify-content: right;
-}
-.dots-box img {
-  width: 15%;
-  max-width: 160px;
-}
 
 .yearn-content {
   width: 100%;
   display: flex;
-  gap: 20px;
-}
-.yearn-content .yearn-left-content {
+  gap: 90px;
+  display: flex;
   position: relative;
-  width: 55%;
-  display: flex;
-  align-items: center;
-  justify-content: center;
 }
-.yearn-content .yearn-left-content .yearn-img-container {
-  padding: 20px 20px 20px 20px;
-}
-.yearn-content .yearn-left-content .yearn-img-container img {
+.yearn-content .dots-box {
   width: 100%;
-}
-.yearn-content .yearn-right-content {
-  width: 45%;
+  position: absolute;
+  top: -47px;
+  right: -71px;
   display: flex;
-  justify-content: center;
+  justify-content: end;
 }
-.yearn-content .yearn-text-content {
-  padding: 20px 20px 20px 20px;
+.yearn-content .dots-box img {
+  width: 15%;
+  max-width: 160px;
+}
+.yearn-content .dots-box-bottom {
+  width: 100%;
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  display: flex;
+  justify-content: start;
+}
+.yearn-content .dots-box-bottom img {
+  width: 15%;
+  max-width: 160px;
+}
+.yearn-content .bot-left-section {
+  width: 50%;
+  display: flex;
+  align-items: end;
+}
+.yearn-content .bot-left-section .bot-box {
   display: flex;
   flex-direction: column;
-  gap: 45px;
+  gap: 30px;
 }
-.yearn-content .yearn-text-content .top-text-content {
-  display: flex;
-  flex-direction: column;
-  gap: 16px;
-}
-.yearn-content .yearn-text-content .top-text-content .ido-text {
-  font-family: "Caveat";
-  font-weight: 700;
-  font-size: 24px;
-  color: #a143ff;
-}
-.yearn-content .yearn-text-content .top-text-content h2 {
+.yearn-content .bot-left-section .bot-box h2 {
   font-weight: 600;
-  font-size: 44px;
+  font-size: 60px;
   color: #ffffff;
 }
-.yearn-content .yearn-text-content .top-text-content p {
-  color: rgba(255, 255, 255, 0.6980392157);
-  font-size: 18px;
+.yearn-content .bot-left-section .bot-box p {
   font-weight: 400;
+  font-size: 24px;
+  color: rgba(255, 255, 255, 0.6);
 }
-.yearn-content .yearn-text-content .img-text-content {
-  position: relative;
+.yearn-content .bot-left-section .bot-box img {
+  width: 100%;
+  object-fit: contain;
+  margin-left: 10%;
+}
+.yearn-content .bot-card-section {
+  width: 50%;
   display: flex;
   flex-direction: column;
-  gap: 25px;
+  gap: 50px;
 }
-.yearn-content .yearn-text-content .img-text-content p {
-  font-weight: 500;
-  font-size: 18px;
-  color: #ffffff;
+.yearn-content .bot-card-section .bot-cards {
+  display: flex;
+  justify-content: center;
+  gap: 50px;
+}
+.yearn-content .bot-card-section .bot-cards .bot-card {
+  background-color: #242532;
+  width: 400px;
+  border-radius: 40px;
+  padding: 30px 30px;
   display: flex;
   align-items: center;
-  gap: 20px;
 }
-.yearn-content .yearn-text-content .img-text-content p img {
-  width: 20px;
+.yearn-content .bot-card-section .bot-cards .bot-card div {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
 }
-
-.yearn-right-line {
-  width: 250%;
-  height: 6px;
-  position: absolute;
-  z-index: 1;
-  right: -100px;
-  bottom: -90px;
-  overflow: hidden;
+.yearn-content .bot-card-section .bot-cards .bot-card div img {
+  width: 60px;
+  padding-bottom: 16px;
 }
-.yearn-right-line .yearn-slider-right {
-  height: 100%;
-  width: 100%;
-  position: absolute;
-  animation: slideright 5s linear infinite;
-  background: linear-gradient(90deg, #0e0b23 0%, #cfcfcf 100%);
+.yearn-content .bot-card-section .bot-cards .bot-card div h2 {
+  font-weight: 500;
+  font-size: 24px;
+  color: #ffffff;
+}
+.yearn-content .bot-card-section .bot-cards .bot-card div p {
+  font-weight: 400;
+  font-size: 14px;
+  color: rgba(255, 255, 255, 0.6);
+}
+.yearn-content .bot-card-section .bot-cards .botCard-added {
+  background-color: #303141;
 }
 
 .yearn-gptline-left {
-  display: none;
   width: 100%;
   height: 6px;
   position: absolute;
@@ -2175,18 +2172,17 @@ body {
   height: 100%;
   width: 100%;
   position: absolute;
-  animation: slideright 5s linear infinite;
-  background: linear-gradient(90deg, #0e0b23 0%, #cfcfcf 100%);
+  animation: sliderightt 5s linear infinite;
+  background: linear-gradient(90deg, #cfcfcf 0%, #0e0b23 100%);
 }
 
 .yearn-from-bottom {
-  display: none;
   height: 100%;
   width: 6px;
   position: absolute;
   z-index: 1;
   top: 0;
-  right: 45px;
+  left: 45px;
   overflow: hidden;
 }
 .yearn-from-bottom .yearn-slide-line {
@@ -2194,23 +2190,6 @@ body {
   width: 100%;
   position: absolute;
   animation: slideDown 5s linear infinite;
-  background: linear-gradient(to top, #cfcfcf 0%, #0d0b1b 100%);
-}
-
-.yearn-from-section {
-  height: 110%;
-  width: 6px;
-  position: absolute;
-  z-index: 1;
-  top: 0;
-  right: 0px;
-  overflow: hidden;
-}
-.yearn-from-section .yearn-section-slide {
-  height: 100%;
-  width: 100%;
-  position: absolute;
-  animation: slideDown 4.5s linear infinite;
   background: linear-gradient(to top, #cfcfcf 0%, #0d0b1b 100%);
 }
 
@@ -2222,56 +2201,94 @@ body {
     transform: translateY(100%);
   }
 }
-@keyframes slideright {
+@keyframes sliderightt {
   0% {
-    transform: translateX(-100%);
+    transform: translateX(100%);
   }
   100% {
-    transform: translateX(100%);
+    transform: translateX(-100%);
   }
 }
 @media only screen and (max-width: 1200px) {
-  .yearn-right-line {
-    display: none;
-  }
   .yearn-gptline-left {
     display: block;
   }
   .yearn-from-bottom {
     display: block;
   }
-  .yearn-from-section {
-    display: none;
-  }
   .yearn-content {
     flex-direction: column;
   }
-  .yearn-content .yearn-left-content {
+  .yearn-content .dots-box-bottom {
+    display: none;
+  }
+  .yearn-content .bot-left-section {
     width: 100%;
   }
-  .yearn-content .yearn-right-content {
+  .yearn-content .bot-left-section .bot-box {
+    align-items: center;
+  }
+  .yearn-content .bot-left-section .bot-box p {
+    text-align: center;
+  }
+  .yearn-content .bot-left-section .bot-box img {
+    margin-left: 0px;
+    width: 50%;
+  }
+  .yearn-content .bot-card-section {
     width: 100%;
+    flex-wrap: wrap;
   }
 }
 @media only screen and (max-width: 900px) {
-  .yearn-content .yearn-text-content {
-    align-items: center;
+  .yearn-content {
+    gap: 30px;
   }
-  .yearn-content .yearn-text-content .top-text-content {
-    align-items: center;
-  }
-  .yearn-content .yearn-text-content .top-text-content .ido-text {
-    font-size: 20px;
-  }
-  .yearn-content .yearn-text-content .top-text-content h2 {
+  .yearn-content .bot-left-section .bot-box h2 {
     font-size: 30px;
   }
-  .yearn-content .yearn-text-content .top-text-content p {
+  .yearn-content .bot-left-section .bot-box p {
     font-size: 16px;
-    text-align: center;
   }
-  .yearn-content .yearn-text-content .img-text-content p {
-    font-size: 18px;
+  .yearn-content .bot-card-section {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+  }
+  .yearn-content .bot-card-section .bot-cards {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+  }
+  .yearn-content .bot-card-section .bot-cards .bot-card {
+    background-color: #242532;
+    width: 300px;
+    border-radius: 40px;
+    padding: 30px 30px;
+    display: flex;
+    align-items: center;
+  }
+  .yearn-content .bot-card-section .bot-cards .bot-card div {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+  }
+  .yearn-content .bot-card-section .bot-cards .bot-card div img {
+    width: 30px;
+    padding-bottom: 16px;
+  }
+  .yearn-content .bot-card-section .bot-cards .bot-card div h2 {
+    font-weight: 500;
+    font-size: 19px;
+    color: #ffffff;
+  }
+  .yearn-content .bot-card-section .bot-cards .bot-card div p {
+    font-weight: 400;
+    font-size: 12px;
+    color: rgba(255, 255, 255, 0.6);
+  }
+  .yearn-content .bot-card-section .bot-cards .botCard-added {
+    background-color: #303141;
   }
 }
 @media only screen and (max-width: 600px) {
@@ -2280,11 +2297,26 @@ body {
   }
   .yearn-from-bottom {
     width: 3px;
-    right: 15px;
+    left: 15px;
   }
   .yearn-gpt .yearn-gpt-align {
     padding: 50px 0px 50px 0px;
     gap: 20px;
+  }
+  .yearn-content {
+    gap: 40px;
+  }
+  .yearn-content .dots-box {
+    top: 0;
+    right: 0;
+  }
+  .yearn-content .bot-card-section .bot-cards {
+    flex-wrap: wrap;
+    padding: 0px 16px;
+  }
+  .yearn-content .bot-card-section .bot-cards .bot-card {
+    width: 100%;
+    max-width: 400px;
   }
 }
 .features-container {
@@ -2973,6 +3005,17 @@ body {
 .fade-active {
   transform: translateY(0px);
   opacity: 1;
+}
+
+.AnimeCard {
+  opacity: 0;
+  transition: 1s;
+  transform: translateY(40px);
+}
+
+.AnimeCardActive {
+  opacity: 1;
+  transform: translateY(0px);
 }
 
 .gradient-text1 {
