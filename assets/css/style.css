@@ -2102,6 +2102,9 @@ body {
   flex-direction: column;
   gap: 30px;
 }
+.yearn-content .bot-left-section .bot-box .bot-box-highlight {
+  color: #4ac9ff;
+}
 .yearn-content .bot-left-section .bot-box h2 {
   font-weight: 600;
   font-size: 60px;

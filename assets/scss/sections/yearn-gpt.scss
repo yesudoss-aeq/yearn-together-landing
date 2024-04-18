@@ -272,6 +272,9 @@
       display: flex;
       flex-direction: column;
       gap: 30px;
+      .bot-box-highlight {
+        color: #4ac9ff;
+      }
       h2 {
         font-weight: 600;
         font-size: 60px;
