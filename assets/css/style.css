@@ -2520,6 +2520,8 @@ body {
   width: 100%;
 }
 .chatbot-container .chatbot-subcontainer .chatbot-details-container {
+  display: flex;
+  align-items: center;
   width: 50%;
 }
 .chatbot-container .chatbot-subcontainer .chatbot-details-container h1 {
