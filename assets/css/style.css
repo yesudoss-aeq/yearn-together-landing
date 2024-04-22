@@ -1436,16 +1436,16 @@ body {
   margin-top: 0px;
 }
 .gameplayContent .sliderSection #radio2:checked ~ .slider-cards .slides {
-  margin-top: -344px;
+  margin-top: -384px;
 }
 .gameplayContent .sliderSection #radio3:checked ~ .slider-cards .slides {
-  margin-top: -684px;
+  margin-top: -764px;
 }
 .gameplayContent .sliderSection #radio4:checked ~ .slider-cards .slides {
-  margin-top: -1024px;
+  margin-top: -1144px;
 }
 .gameplayContent .sliderSection #radio5:checked ~ .slider-cards .slides {
-  margin-top: -1364px;
+  margin-top: -1524px;
 }
 .gameplayContent .sliderSection #radio1:checked ~ .dots .dot1 {
   background: linear-gradient(to top, #1967fc 0%, #020917 100%);
@@ -1489,7 +1489,7 @@ body {
   display: flex;
   flex-direction: column;
   gap: 20px;
-  height: 340px;
+  height: 380px;
   overflow: hidden;
 }
 .gameplayContent .sliderSection .slider-cards .slides {
@@ -1498,14 +1498,14 @@ body {
   transition: 1s;
 }
 .gameplayContent .sliderSection .slider-cards .slides .outerSlider {
-  height: 340px;
+  height: 380px;
   transition: 1s;
 }
 .gameplayContent .sliderSection .slider {
   display: flex;
   gap: 10px;
   flex-direction: column;
-  height: 340px;
+  height: 380px;
 }
 .gameplayContent .sliderSection .slider img {
   width: 130px;

@@ -94,20 +94,20 @@
       margin-top: -0px;
     }
     #radio2:checked ~ .slider-cards .slides {
-      // margin-top: -334px;
-      margin-top: -344px;
+      // margin-top: -344px;
+      margin-top: -384px;
     }
     #radio3:checked ~ .slider-cards .slides {
-      // margin-top: -664px;
-      margin-top: -684px;
+      // margin-top: -684px;
+      margin-top: -764px;
     }
     #radio4:checked ~ .slider-cards .slides {
-      // margin-top: -994px;
-      margin-top: -1024px;
+      // margin-top: -1024px;
+      margin-top: -1144px;
     }
     #radio5:checked ~ .slider-cards .slides {
-      // margin-top: -1324px;
-      margin-top: -1364px;
+      // margin-top: -1364px;
+      margin-top: -1524px;
     }
 
     #radio1:checked ~ .dots .dot1 {
@@ -155,20 +155,16 @@
       display: flex;
       flex-direction: column;
       gap: 20px;
-      // height: 330px;
-      height: 340px;
+      // height: 340px;
+      height: 380px;
       overflow: hidden;
 
       .slides {
-        // height: 300%;
         padding-left: 10px;
         padding-bottom: 10px;
         transition: 1s;
-
         .outerSlider {
-          // height: 33.33%;
-          // height: 330px;
-          height: 340px;
+          height: 380px;
           transition: 1s;
         }
       }
@@ -178,10 +174,10 @@
       display: flex;
       gap: 10px;
       flex-direction: column;
-      // height: 330px;
-      height: 340px;
-      // min-width: 415px;
-      // min-width: 476px;
+
+      // height: 340px;
+      height: 380px;
+
       img {
         width: 130px;
         aspect-ratio: 1;
